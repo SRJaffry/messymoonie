@@ -176,6 +176,20 @@
   .about-list .dot svg{ width:14px; height:14px; }
   @media (max-width: 900px){ .about-grid{ grid-template-columns:1fr; } .about-visual{ max-width:320px; margin:0 auto; } }
 
+  /* ---------- About Me ---------- */
+  /* Shan Jaffry */
+  .about-me{ padding:90px 0; background:var(--cream); }
+  .about-me-grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; align-items:center; }
+  .about-me-photo{ width:100%; height:100%; object-fit:cover; transform: translateX(20px);}
+  .about-me-copy h2{ font-size:clamp(1.9rem,3.4vw,2.6rem); margin-bottom:16px; }
+  .about-me-copy p{ color:var(--navy-soft); font-size:1.08rem; line-height:1.65; }
+  .about-me-copy p + p{ margin-top:16px; }
+  .about-me-copy .about-greeting{ font-family:'Fredoka',sans-serif; font-weight:600; color:var(--navy); }
+  @media (max-width: 900px){ .aboutme-grid{ grid-template-columns:1fr; } .aboutme-visual{ max-width:320px; margin:0 auto; } } 
+
+  
+  /* Shan Jaffry ends here*/
+
   /* ---------- Session experience ---------- */
   .experience{ padding: 90px 0; background: var(--mint-pale); position:relative; overflow:hidden; }
   .exp-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
@@ -331,7 +345,8 @@
     </a>
     <div class="nav-links">
       <a href="#top">Home</a>
-      <a href="#about">About</a>
+      <a href="#about">About Club</a>
+      <a href="#aboutme">About Me</a>
       <a href="#sessions">Sessions</a>
       <a href="#benefits">Benefits</a>
       <a href="#faq">FAQs</a>
@@ -345,6 +360,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#top">Home</a>
     <a href="#about">About</a>
+    <a href="#aboutme">About Me</a>
     <a href="#sessions">Sessions</a>
     <a href="#benefits">Benefits</a>
     <a href="#schedule">Schedule</a>
@@ -405,6 +421,28 @@
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5 9-9"/></svg></span>Caregivers are warmly encouraged to join in, observe, and enjoy it too.</li>
         <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5 9-9"/></svg></span>Every session is built to support connection between child and grown-up.</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ ABOUT ME ============ -->
+<section class="aboutme" id="aboutme">
+  <div class="wrap about-me-grid">
+    <div class="about-visual about-me-visual">
+      <div class="about-shape">
+        <div class="frame">
+          <img src="images/zehra.jpeg" alt="Zehra, founder of Messy Moonie Play Club" class="about-me-photo">
+        </div>
+      </div>
+    </div>
+    <div class="about-me-copy">
+      <span class="eyebrow">Meet Zehra</span>
+      <h2>About Me</h2>
+      <p class="about-greeting">Hi Y'all!</p>
+      <p>I'm Zehra, the heart and brain behind Messy Moonie Play Club, a sensory play business dedicated to nurturing children's creativity, development, and love of learning.</p>
+      <p>With a professional background in mental health and a deep understanding of child development, I recognise the valuable role sensory experiences play in supporting children's growth. Combining my expertise with my experiences as a mother, I created Messy Moonie to provide thoughtfully designed sensory play opportunities that spark imagination, encourage exploration, and foster meaningful learning.</p>
+      <p>I believe childhood should be filled with curiosity, wonder, and hands-on experiences that help children build skills while having fun. Through Messy Moonie Play Club, I aim to create enriching play experiences that bring families together and support children's natural desire to learn.</p>
     </div>
   </div>
 </section>
@@ -644,7 +682,7 @@
       </div>
       <div class="foot-col">
         <h5>Explore</h5>
-        <ul><li><a href="#about">About</a></li><li><a href="#sessions">Sessions</a></li><li><a href="#benefits">Benefits</a></li><li><a href="#schedule">Schedule</a></li></ul>
+        <ul><li><a href="#about">About</a></li><li><li><a href="#aboutme">About Me</a></li><li></li><a href="#sessions">Sessions</a></li><li><a href="#benefits">Benefits</a></li><li><a href="#schedule">Schedule</a></li></ul>
       </div>
       <div class="foot-col">
         <h5>Visit</h5>
